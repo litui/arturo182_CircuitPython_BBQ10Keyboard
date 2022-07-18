@@ -229,7 +229,7 @@ class BBQ10Keyboard:
 
         return self._read_register(_REG_BK2) / 255
 
-    @backlight.setter
+    @backlight2.setter
     def backlight2(self, value):
         if self.version < (0, 4):
             raise NotImplementedError('This function requires FW version 0.4 or newer')
